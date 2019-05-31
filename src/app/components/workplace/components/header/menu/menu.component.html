@@ -1,0 +1,46 @@
+<nav>
+  <div class="dropdown">
+    <a routerLink="home" routerLinkActive="menuItemTopSelected" class="menuItemTop">HOME</a>
+  </div>
+
+  <div class="dropdown">
+    <a routerLink="showroom" routerLinkActive="menuItemTopSelected" class="menuItemTop">SHOP</a>
+  </div>
+
+  <div class="dropdown">
+    <a routerLink="blog" routerLinkActive="menuItemTopSelected" class="menuItemTop">BLOG</a>
+  </div>
+
+  <div class="dropdown">
+    <a routerLink="login" class="menuItemTop">
+      <img src="assets/icons/icon_partner.svg" width="20" height="20"/>
+    </a>
+    <div class="submenu">
+      <div class="submenu-1-column">
+        <a routerLink="userProfile" class="menuItem">PROFIL</a>
+        <a routerLink="friends" class="menuItem">FREUNDE</a>
+        <a routerLink="notifications" class="menuItem">MITTEILUNGEN</a>
+      </div>
+      <div class="submenu-2-column">
+        <a routerLink="shoppingCart" class="menuItem">WARENKORB</a>
+        <a routerLink="wishList" class="menuItem">WUNSCHLISTE</a>
+        <a routerLink="orders" class="menuItem">BESTELLUNGEN</a>
+      </div>
+      <div class="submenu-4-column">
+        <a *ngIf="isUserLoggedIn()" (click)="logout()" class="menuItem">ABMELDEN</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <a routerLink="shoppingCart" class="menuItemTop">
+      <img src="assets/icons/icon_shopping_cart.svg" width="20" height="20"/>
+    </a>
+  </div>
+
+  <!--
+  <div id="iconMenuHamburger">
+    <img src="assets/icon/icon_menu.svg" width="20" height="20"/>
+  </div>
+  -->
+</nav>

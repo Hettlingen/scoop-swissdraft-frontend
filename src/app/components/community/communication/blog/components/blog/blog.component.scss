@@ -1,0 +1,12 @@
+.content {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+div.blogMetadata {
+  font-size:14px;
+}
+
+li.blogArchiveOverview {
+  margin-bottom: 50px;
+}

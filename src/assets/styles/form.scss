@@ -1,0 +1,159 @@
+/* ---------------------------------------------- */
+/* Form Div's                                     */
+/* ---------------------------------------------- */
+div.formCentered {
+  position:relative;
+  display:block;
+  max-width: 50%;
+  max-height:100%;
+
+  background-color:rgba(255,255,255, 0); /*The fourth value indicates the transparency*/
+
+  margin-left:auto;
+  margin-right: auto;
+  margin-top:0px;
+  margin-bottom: 0px;
+  border-top: 0px solid purple;
+  border-left: 0px solid purple;
+  border-right: 0px solid purple;
+  border-bottom: 0px solid purple;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 10px;
+  padding-bottom: 2rem;
+
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+
+/* ---------------------------------------------- */
+/* Input Elements                                 */
+/* ---------------------------------------------- */
+.inputBlock {
+  height: 58px;
+  padding-top: 0px;
+  padding-bottom: 10px;
+}
+
+.inputBlockTextarea {
+  height: auto;
+  padding-top: 0px;
+  padding-bottom: 10px;
+}
+
+.inputText {
+  display:block;
+  width: 100%;
+  height: 30px;
+
+  font-size:18px;
+  color:#757575;
+  border-color: #757575;
+
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+
+  border-top: 0px solid grey;
+  border-left: 0px solid grey;
+  border-right: 0px solid grey;
+  border-bottom: 1px solid grey;
+}
+
+.inputText:focus {
+  border-bottom: 2px solid #918247;
+  outline:none;
+}
+
+.inputTextarea {
+  display:block;
+  width: 100%;
+  height: 200px;
+}
+
+.inputCheckbox {
+
+}
+
+.outputTextError {
+  font-size:14px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style:normal;
+
+  padding-top: 0px;
+  padding-bottom: 4px;
+
+  color: #918247;
+}
+
+.outputTextInfo {
+  font-size:14px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style:normal;
+
+  padding-top: 0px;
+  padding-bottom: 4px;
+
+  color:#484848;
+}
+
+/* ---------------------------------------------- */
+/* Buttons                                        */
+/* ---------------------------------------------- */
+/* ------------------------------------------------- */
+/* Button                                            */
+/* ------------------------------------------------- */
+.scoop_button_primary {
+  display: inline-block;
+
+  background-color: #918247;
+  color: #ffffff;
+
+  margin-top: 1rem;
+}
+
+.scoop_button_primary:hover {
+  cursor: pointer;
+  background-color: #918247;
+}
+
+.scoop_button_primary_centered {
+  display:block;
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 14px 28px;
+
+  background-color: #918247;
+  color: #ffffff;
+}
+
+.scoop_button_primary_centered:hover {
+  cursor: pointer;
+  background-color: #918247;
+  text-decoration: none;
+}
+
+.scoop_button_primary_centered:disabled {
+  cursor: auto;
+  background: #858585;
+}
+
+.scoop_button_outline_centered {
+  display:block;
+  width: 100%;
+  padding: 14px 28px;
+  margin-bottom: 30px;
+  border: 2px solid #918247;
+
+  color: #858585;
+  background-color: white;
+
+  cursor: pointer;
+}
+
+.scoop_button_outline_centered:hover {
+  border-color: #918247;
+  background-color: #918247;
+}

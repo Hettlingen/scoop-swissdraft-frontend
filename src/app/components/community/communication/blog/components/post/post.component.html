@@ -1,0 +1,19 @@
+<div class="content">
+
+  <div class="content-max-width">
+    <app-banner fileNamePicture="banner-application.png"></app-banner>
+  </div>
+
+  <div class="content-narrow">
+    <div class="blog">
+      <h1>{{post?.title}}</h1>
+
+      <div class="blogMetadata">
+        <b>Autor:</b> Martin Braun<br/>
+        <b>Publiziert am:</b> {{ post?.dateCreated | date:'d MMMM y' }}<br/>
+        <b>Lesedauer:</b> {{post?.duration}} Minuten
+      </div>
+      <div [innerHTML]="post?.content"></div>
+    </div>
+  </div>
+</div>

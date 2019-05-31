@@ -1,0 +1,62 @@
+.bannerPicture {
+  width:100%;
+  height: 100%;
+}
+
+.buttonPrevious{
+  cursor: pointer;
+  position: absolute;
+  display: inline-block;
+  float: left;
+  height: 100%;
+  width: 5%;
+  left: 15px;
+  opacity: 0.5;
+  border: none;
+
+  background: url('/src/assets/icons/icon_arrow_left_off.svg') 0 0 no-repeat;
+  background-size: 100%;
+  background-position: 50% 50%;
+}
+
+.buttonPrevious:hover {
+  background: url('/src/assets/icons/icon_arrow_left_on.svg') 0 0 no-repeat;
+  background-size: 100%;
+  background-position: 50% 50%;
+}
+
+.buttonNext {
+  cursor: pointer;
+  position: absolute;
+  display: inline-block;
+  float: right;
+  height: 100%;
+  width: 5%;
+  right:15px;
+  opacity: 0.5;
+  border: none;
+
+  background: url('/src/assets/icons/icon_arrow_right_off.svg') 0 0 no-repeat;
+  background-size: 100%;
+  background-position: 50% 50%;
+}
+
+.buttonNext:hover {
+  background: url("/src/assets/icons/icon_arrow_right_on.svg") 0 0 no-repeat;
+  background-size: 100%;
+  background-position: 50% 50%;
+}
+
+.slideshowRadioButton{
+  position: relative;
+  display: block;
+  bottom: 35px;
+  text-align: center;
+
+  z-index: 500;
+}
+
+.slideshowRadioButton input {
+  cursor: pointer;
+  z-index: 550;
+}

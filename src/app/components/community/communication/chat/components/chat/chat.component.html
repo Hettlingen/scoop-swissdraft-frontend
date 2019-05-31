@@ -1,0 +1,15 @@
+<div class="content">
+
+  <div class="content-max-width">
+    <app-banner fileNamePicture="banner.png"></app-banner>
+  </div>
+
+  <div class="content-narrow">
+    <h1>Chat</h1>
+
+    <input maxlength="140"
+           placeholder="Type your message"
+           [(ngModel)]="messageContent" style="margin: 30px;"/>
+    <button (click)="sendMessage(messageContent)" style="margin: 30px;">Send Message</button>
+  </div>
+</div>

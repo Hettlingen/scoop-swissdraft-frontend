@@ -1,0 +1,19 @@
+.content {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.content-slim {
+  grid-column: 5 / span 4;
+}
+
+.content-narrow {
+  grid-column: 3 / span 8;
+}
+
+.content-max-width {
+  grid-column: 1 / span 12;
+}
+
+

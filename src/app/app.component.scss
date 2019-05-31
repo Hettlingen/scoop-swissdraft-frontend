@@ -1,0 +1,165 @@
+div.workplace {
+  display: grid;
+  grid-template-rows: 90px auto 400px;
+}
+
+* {
+  /* Padding and border is integrated in the witdh and height*/
+  box-sizing: border-box;
+}
+
+*:focus {
+  /* Entfernt bei allen Elementen den blauen Fokus-Selektionsrahmen */
+  outline: none;
+}
+
+html, body, label {
+  max-width:100%;
+  max-height:100%;
+
+  font-size:18px;
+  font-family: 'Open Sans', sans-serif;
+  font-style:normal;
+  font-weight: 300;
+  line-height  : 26px;
+  letter-spacing: 0px;
+
+  color:#484848;
+  background-repeat: no-repeat;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+h1 {
+  text-align: center;
+  font-size:48px;
+  font-style:normal;
+  font-weight: 100;
+  color: #918247;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+h2 {
+  font-size:32px;
+  font-style:normal;
+  font-weight: 100;
+  color: #918247;
+
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+h2.title-white-h2 {
+  text-align: center;
+  font-style:normal;
+  font-weight: 100;
+  color: white;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-left:0px;
+  margin-right: 0px;
+  margin-top:1rem;
+  margin-bottom: 1rem;
+}
+
+p.textAlignMiddle {
+  color: white;
+
+  font-weight: bold;
+
+  margin:auto; /*Bewirkt, dass das Div zentriert dargestellt wird*/
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 0px;
+  padding-bottom: 25px;
+}
+
+p.quotation {
+  width:60%;
+  position: relative;
+  background-color: white;
+
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+
+  margin:auto; /*Bewirkt, dass das Div zentriert dargestellt wird*/
+  border:0px solid lightgrey;
+  border-radius: 20px;
+  border-top: 0px solid grey;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 0px;
+  padding-bottom: 25px;
+}
+
+a {
+  color: #918247;
+  text-decoration:none;}
+a:link {color: #918247;text-decoration:none;}      /* unvisited link */
+a:visited {color: #918247;text-decoration:none;}  /* visited link */
+a:hover {color: #918247;text-decoration:none;}  /* mouse over link */
+a:active {color: #918247;text-decoration:none;}  /* selected link */
+
+
+/* ------------------------------------------------- */
+/* Images                                            */
+/* ------------------------------------------------- */
+.icon {
+  width:20px;
+  height:20px;
+
+  margin: 5px;
+}
+
+.imageFullscreen {
+  background: url("/../assets/img/background/surfing-1.jpg") no-repeat center center fixed;
+
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+
+/*------------------------------------*\
+	Article within 2 columns
+\*------------------------------------*/
+ul.articleTwoColumns {
+  overflow: hidden;
+  with:100%;
+  margin: 0;
+  padding: 0;
+}
+
+ul.articleTwoColumns li {
+  display: inline-block;
+  width: 40%;
+  margin-right: 20px;
+  padding: 0;
+  vertical-align: top; /* In case multi-word categories form two lines */
+}
+
+.loadingSpinner {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #918247; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}

@@ -1,0 +1,71 @@
+footer {
+  font-size:14px;
+
+  margin-left:0px;
+  margin-right: 0px;
+  margin-top:0px;
+  margin-bottom: 0px;
+  border:0px solid lightgrey;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+div.contentFooterMenu {
+  max-width:100%;
+  height:330px;
+  background-color: #918247;
+
+  font-size:14px;
+
+  margin-left:0px;
+  margin-right: 0px;
+  margin-top:0px;
+  margin-bottom: 0px;
+  border:0px solid lightgrey;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+div.contentFooterBottom {
+  max-width:100%;
+  height:50px;
+  background-color: #918247;
+
+  font-size:14px;
+
+  margin-left:0px;
+  margin-right: 0px;
+  margin-top:0px;
+  margin-bottom: 0px;
+  border-top:1px solid white;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+div.contentFooterSocialMedia {
+  position: relative;
+  z-index:999;
+  float: right;
+
+  font-size:14px;
+
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+div.contentFooterLanguage {
+  position: relative;
+  z-index:999;
+  float: left;
+
+  font-size:14px;
+
+  overflow-x: hidden;
+  overflow-y: hidden;
+}

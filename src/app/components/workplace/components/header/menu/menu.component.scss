@@ -1,0 +1,104 @@
+/* Verwendet diese style-attribute in der Parent Klasse, hier also im 'app-services'-Tag */
+:host {
+  grid-column: 3 / span 8;
+}
+
+nav {
+  position:fixed;
+  float:left;
+  top:53px;
+  width:100%;
+}
+
+nav a {
+  color:#484848;
+}
+
+.menuItemTop {
+  background-color: white;
+  padding-right: 40px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.menuItemTopSelected {
+  color: #918247;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  line-height: 35px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.submenu {
+  display: none;
+  grid-template-columns: repeat(12, 1fr);
+  position: fixed;
+  top: 89px;
+  left: 0px;
+  width:100%;
+  font-size: 14px;
+  text-align:left;
+
+  border-top: 1px solid lightgrey;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  background-color: white;
+  -webkit-box-shadow: 0px 5px 10px 3px rgba(155, 155, 155, 0.5); /* WebKit */
+  -moz-box-shadow: 0px 5px 10px 3px rgba(155, 155, 155, 0.5); /* Firefox */
+  box-shadow: 0px 5px 10px 3px rgba(155, 155, 155, 0.5); /* Standard */
+
+  z-index:999;
+}
+
+.submenu-1-column {
+  grid-column: 3 / span 2;
+}
+
+.submenu-2-column {
+  grid-column: 5 / span 2;
+}
+
+.submenu-3-column {
+  grid-column: 7 / span 2;
+}
+
+.submenu-4-column {
+  grid-column: 9 / span 2;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .submenu {
+  display: grid;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .menuItemTop {
+  color: #918247;
+}
+
+a.menuItem {color: #484848;display:block; font-weight: bold;}
+a.menuItem:link {color: #484848; display:block;}      /* unvisited link */
+a.menuItem:visited {color: #484848;display:block;}  /* visited link */
+a.menuItem:hover {color: #918247;display:block;}  /* mouse over link */
+a.menuItem:active {color: #918247;display:block;}  /* selected link */
+
+
+
+/*----------------------------------------------*/
+/* Responsive Configuration                    */
+/*----------------------------------------------*/
+@media only screen and (max-width: 800px) {
+  nav {
+    display: none;
+  }
+
+  #iconMenuHamburger {
+    display: inline-block;
+  }
+}
