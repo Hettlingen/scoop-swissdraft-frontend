@@ -73,7 +73,6 @@ export class AppComponent implements OnInit {
    */
 
   isHeaderVisible() {
-    // return true;
     return !(this.router.url === '/login');
   }
 
