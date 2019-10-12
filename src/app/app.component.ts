@@ -33,51 +33,11 @@ export class AppComponent implements OnInit {
     });
   }
 
-  /**
-   initSoftwareUpdates() {
-    this.swUpdateSoftware.available.subscribe(() => {
-      // Update wurde entdeckt
-      // Update herunterladen
-      this.swUpdateSoftware.activateUpdate().then(() => {
-        // Update wurde heruntergeladen
-        const message = 'Application has been updated';
-        const action = 'Ok, Reload!';
-
-        // Benutzer auf Update hinweisen und Seite neu laden
-        this.snackBar.open(message, action).onAction().subscribe(
-          () => location.reload()
-        );
-      });
-    });
-
-    // Auf Updates prüfen
-    this.swUpdateSoftware.checkForUpdate();
-  }
-
-   initPushNotificationService() {
-    // This public key must be generatet from the scoop-backend
-    // This key is also used in the backend to send notification to the push-service
-    const key = 'BBc7Bb5f5...';
-
-    this.swPushNotificationService.requestSubscription({
-      serverPublicKey: key
-    })
-      .then(sub => {
-          // Als Antwort wird ein Subscription-Objekt geliefert, das die PWA nun an das eigene Backend senden muss.
-          console.log('Push Subscription', JSON.stringify(sub) );
-        },
-        err => {
-          console.error('error registering for push', err);
-        });
-  }
-   */
-
   isHeaderVisible() {
     return !(this.router.url === '/login');
   }
 
   isFooterVisible() {
-    // return true;
     return !(this.router.url === '/login');
   }
 }
