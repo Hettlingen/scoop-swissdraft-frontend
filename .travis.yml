@@ -4,7 +4,8 @@ node_js:
 before_install:
   - export NG_CLI_ANALYTICS=ci
 script:
-  -
+  - npm run build
+  - npm test
 branches:
   only:
     - master
