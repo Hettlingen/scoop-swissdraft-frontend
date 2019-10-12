@@ -24,6 +24,9 @@ import {LoggedInGuard} from './components/utils/guards/LoggedInGuard';
 import { ServicesComponent } from './components/cms/components/services/services.component';
 import {ChatModule} from './components/community/communication/chat/chat.module';
 import {NotificationsModule} from './components/community/communication/notifications/notifications.module';
+import {AngularFireModule} from '@angular/fire';
+import {AngularFireDatabaseModule} from '@angular/fire/database';
+import {environment} from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -42,6 +45,8 @@ import {NotificationsModule} from './components/community/communication/notifica
     HttpClientModule,
     BrowserModule,
     AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireDatabaseModule,
     AuthenticationModule,
     PartnerModule,
     ProductCatalogModule,
