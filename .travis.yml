@@ -7,6 +7,7 @@ script:
   -
 after_success:
   - npm install -g firebase-tools
+  - node_modules/.bin/firebase deploy --non-interactive --token "2YpnHXsYg76gbSycMmxHrBib8gDhdluIV0SXfKK+xqnz29PeYIemkNDsm0ls1mlLbEIJ/4XAfywXdkhgnvUt9Wd1Qi0lgavqp+ha9OzUsuyWP8fXiNeF7N55Nd45WfRFks7d+0GNejh19oZlg7kbuOv+QUWt50/TFZ7+Vvz/Uqnb+VUtH7ASnnppsSowL8tLFijQjoB1wAOsKazfSpoPZ62pUMy7G4FkDOnrykd7Zj2FMOiSJLMRwTtQknu80HEqo26W2DPowEMByMcJDrKlt+n1xWlbfxju5f1MvUt+e6iKudu2oTKdmlOSqP8BBC/knakd0Py18Qu6QZXxJ6MbsAWKdPrFsPxl67F1U77LqAqtosBj0j5ngMw8TLEuQDaKL5M0FeyZz4+mw5XF9JDuaTH48qglz0s+m7RoQEHD5qXEvZO0sj5eaTgcm6p43wNhUQz9rCggxRbAaly2D9wXnI+hmTNI0VeslCpAUnE/AuF8rmmZrPjRr2hFJxWcCjwe0fTCEPIOsyGNIi2wS77Q2xPFSK+7v9KauHrXNECIBC9Aopi3NID/zVUeIt2CDkX0IUxXnL6P0Sq0kWNHWvNrZaNozPtqfhGn2aQgXUU28VsbctVUBd7E94ZY3WB1KqJR2YkMlqYcUVN848u3wpRnHX3qxL/zh8Pf9SClfKSkYlM=" --project swiss-draft
 cache:
   directories:
     - node_modules
