@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/scoop-swissdraft-frontend",
+    "public": "dist",
     "ignore": [
       "firebase.json",
       "**/.*",
